@@ -1,0 +1,41 @@
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      60% 60% at 0% 50%,
+      rgba(25, 113, 157, 0.35),
+      transparent 70%
+    ),
+    radial-gradient(
+      60% 60% at 100% 50%,
+      rgba(25, 113, 157, 0.35),
+      transparent 70%
+    );
+  pointer-events: none;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 18px;
+  color: #606060;
+}
+
+.hero button {
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.phone {
+  position: relative;
+}

@@ -1,0 +1,36 @@
+.trusted {
+  background: #000;
+  color: #888;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.trusted-title {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.logos {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr); /* 5 logos فقط */
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.logo:nth-last-child(2) {
+  grid-column: 2 / span 2;
+}
+
+

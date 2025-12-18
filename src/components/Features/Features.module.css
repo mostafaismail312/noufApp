@@ -1,0 +1,33 @@
+.cardItem {
+  position: relative;
+  background: #000;
+  border-radius: 14px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.cardItem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(47, 164, 255, 0.15),
+    transparent 60%
+  );
+  opacity: 0.8;
+}
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: #19719d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+}

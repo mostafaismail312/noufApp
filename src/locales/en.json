@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "prAboutcing": "About",
+    "Platforms": "Platforms" ,
+    "Testimonials": "Testimonials"
+  },
+
+  "hero": {
+    "fir": "Voice-First, Business-Ready",
+    "badge": "Voice-First, Business-Ready",
+    "title": "Deliver instant AI-powered voice experiences",
+    "subtitle": "Nouf is an AI Voice Agent that lets your users order, ask, or interact using natural conversation.",
+    "cta": "Get Started"
+  },
+
+  "howItWorks": {
+    "title": "How it works...?",
+    "steps": {
+      "1": {
+        "title": "Press the Mic",
+        "desc": "Simply tap the microphone button to start your voice search instantly."
+      },
+      "2": {
+        "title": "Say What You're Looking For",
+        "desc": "Speak naturally — whether it's a product name, category, or description."
+      },
+      "3": {
+        "title": "Nouf Understands",
+        "desc": "Nouf instantly understands your request."
+      },
+      "4": {
+        "title": "Get Smart Suggestions",
+        "desc": "See the best matching products."
+      },
+      "5": {
+        "title": "Refine with Simple Questions",
+        "desc": "Answer a few quick questions if you want to specify color, size, or price."
+      },
+      "6": {
+        "title": "Choose & Buy",
+        "desc": "Select the best product and add it to your cart effortlessly."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Features & Tech",
+    "plug": {
+      "title": "Plug-and-Play API",
+      "desc": "Integrate Nouf in minutes, no complex setup. Works seamlessly with web and mobile apps instantly."
+    },
+    "speech": {
+      "title": "Accurate Speech Recognition",
+      "desc": "Understands Arabic & English clearly for every customer."
+    },
+    "intent": {
+      "title": "Intent-Based AI",
+      "desc": "Recognizes what users mean, not just the words they say."
+    },
+    "security": {
+      "title": "Enterprise-Grade Security",
+      "desc": "Protects user data with full encryption and compliance."
+    },
+    "custom": {
+      "title": "Easy Customization",
+      "desc": "Flexible configuration options with fast integration."
+    },
+    "scale": {
+      "title": "Scalable & Reliable",
+      "desc": "Track interactions, engagement, and conversations easily."
+    }
+  },
+
+  "footer": {
+    "about": "About Nouf",
+    "company": "Company Overview",
+    "careers": "Careers",
+    "press": "Press & Media",
+    "testimonials": "Testimonials",
+    "resources": "Resources",
+    "blog": "Blog",
+    "help": "Help Center",
+    "webinars": "Webinars & Events",
+    "cases": "Case Studies",
+    "support": "Support & Contact",
+    "contact": "Contact Us",
+    "tech": "Technical Support",
+    "feedback": "Feedback",
+    "community": "Community Forum",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "terms": "Term of use",
+    "privacy": "Privacy policy",
+    "security": "Security"
+  }
+}
