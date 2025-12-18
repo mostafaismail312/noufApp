@@ -12,22 +12,62 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="d-flex align-items-center justify-content-between container py-3">
-      <div className="logo ">
-        <img className="w-75" src={logo} alt="" />
+    <nav className="navbar navbar-expand-lg navbar-dark ">
+      <div className="container">
+        {/* Logo */}
+        <a className="navbar-brand" href="#">
+          <img src={logo} alt="logo" style={{ width: "120px" }} />
+        </a>
+
+        {/* Toggle Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Links */}
+        <div className="collapse navbar-collapse" id="mainNavbar">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li className="nav-item">
+              <a className="nav-link active" href="#">
+                {t("nav.home")}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                {t("nav.features")}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                {t("nav.About")}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                {t("nav.Platforms")}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                {t("nav.Testimonials")}
+              </a>
+            </li>
+          </ul>
+
+          {/* Language Button */}
+          <button
+            onClick={switchLang}
+            className="btn btn-outline-light ms-lg-3"
+          >
+            {i18n.language === "en" ? "AR" : "EN"}
+          </button>
+        </div>
       </div>
-
-      <ul className="d-flex gap-4 list-unstyled mb-0 links align-items-center">
-        <li className="active">{t("nav.home")}</li>
-        <li>{t("nav.features")}</li>
-        <li>{t("nav.About")}</li>
-        <li>{t("nav.Platforms")}</li>
-        <li>{t("nav.Testimonials")}</li>
-      </ul>
-
-      <button onClick={switchLang} className="btn btn-outline-light">
-        {i18n.language === "en" ? "AR" : "EN"}
-      </button>
     </nav>
   );
 }

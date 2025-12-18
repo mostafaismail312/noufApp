@@ -6,7 +6,7 @@ const Pricing = () => {
     <section className={`container-fluid ${styles.pricingSection}`}>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6 text-white">
+          <div className="col-md-6 text-white text-center text-md-start mb-5 mb-md-0">
             <span className="mainTitle">Pricing</span>
 
             <h2 className={styles.title}>
@@ -33,8 +33,8 @@ const Pricing = () => {
             <button className={`btn ${styles.ctaBtn}`}>Contact Us</button>
           </div>
 
-          <div className="col-md-6 d-flex justify-content-center">
-            <div className={styles.waveWrapper}>
+          <div className="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
+            <div className={`${styles.waveWrapper} d-flex justify-content-center `}>
               <img src={`${img} `} alt="" />
             </div>
           </div>

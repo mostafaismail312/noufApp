@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import style from "./Features.module.css";
 
-
 export default function Features() {
   const { t } = useTranslation();
 
@@ -47,22 +46,19 @@ export default function Features() {
 
   return (
     <section className="bg-black py-24 px-6 container">
-      <h2 className="text-center mainTitle">
-        {t("features.title")}
-      </h2>
+      <h2 className="text-center mainTitle">{t("features.title")}</h2>
 
       <div className={`row g-3 m-2 ${style.cardItem}`}>
         {features.map((item) => (
           <div
             key={item.key}
             className="
-              col-4
-             
+              col-12
+    col-sm-6
+    col-lg-4
             "
           >
-            <div
-              className={`${style.featureIcon}`}
-            >
+            <div className={`${style.featureIcon}`}>
               <i className={item.icon}></i>
             </div>
 

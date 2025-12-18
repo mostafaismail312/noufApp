@@ -17,7 +17,8 @@
   grid-template-columns: repeat(5, 1fr); /* 5 logos فقط */
   gap: 40px;
   width: 100%;
-  align-items: center;
+  justify-content: center;
+  place-items: center;
 }
 
 .logo {
@@ -33,4 +34,21 @@
   grid-column: 2 / span 2;
 }
 
+@media (max-width: 992px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+/* Mobile */
+@media (max-width: 576px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* نلغي أي تحكم يدوي في الأعمدة */
+  .logo:nth-last-child(2) {
+    grid-column: auto !important;
+  }
+}

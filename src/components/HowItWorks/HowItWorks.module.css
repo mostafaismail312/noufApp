@@ -51,7 +51,6 @@
   line-height: 1.6;
 }
 
-
 .icon {
   display: flex;
   align-items: center;
@@ -95,7 +94,11 @@
 .left .icon {
   padding-left: 380px;
 }
-
+@media (max-width: 500px) {
+  .left .icon {
+    padding-left: 0px !important;
+  }
+}
 /* left side */
 .left {
   flex-direction: row-reverse;
